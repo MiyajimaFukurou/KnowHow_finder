@@ -1,0 +1,67 @@
+[
+  {
+    "start_line": 0,
+    "end_line": 3,
+    "tag": "作業説明・全体段取り"
+  },
+  {
+    "start_line": 4,
+    "end_line": 12,
+    "tag": "作業内容分担・役割確認"
+  },
+  {
+    "start_line": 13,
+    "end_line": 56,
+    "tag": "3Dプリンター準備"
+  },
+  {
+    "start_line": 57,
+    "end_line": 131,
+    "tag": "3Dプリンター出力データ作成・設定"
+  },
+  {
+    "start_line": 132,
+    "end_line": 243,
+    "tag": "3D印刷作業実行（印刷開始～印刷中の管理）"
+  },
+  {
+    "start_line": 244,
+    "end_line": 279,
+    "tag": "3Dプリント完了・片付け/次工程準備"
+  },
+  {
+    "start_line": 280,
+    "end_line": 453,
+    "tag": "レーザーカッター準備・データ設定"
+  },
+  {
+    "start_line": 454,
+    "end_line": 670,
+    "tag": "レーザーカット実行・加工"
+  },
+  {
+    "start_line": 671,
+    "end_line": 842,
+    "tag": "レーザーカット完了・機器停止・片付け"
+  },
+  {
+    "start_line": 843,
+    "end_line": 962,
+    "tag": "組立準備・部材確認"
+  },
+  {
+    "start_line": 963,
+    "end_line": 1043,
+    "tag": "箱組み立て・細部調整"
+  },
+  {
+    "start_line": 1044,
+    "end_line": 1084,
+    "tag": "最終組立・仕上げ"
+  },
+  {
+    "start_line": 1085,
+    "end_line": 1114,
+    "tag": "完成確認・終了処理"
+  }
+]

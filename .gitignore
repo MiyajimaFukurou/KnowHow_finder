@@ -1,0 +1,5 @@
+.env
+.txt
+pastlog/
+venv/
+sbagent.py
