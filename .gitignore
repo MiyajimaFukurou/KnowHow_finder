@@ -1,5 +1,5 @@
 .env
-.txt
+*.txt
 pastlog/
 venv/
 sbagent.py
