@@ -1,5 +1,4 @@
 .env
 *.txt
-pastlog/
+*.json
 venv/
-sbagent.py
