@@ -6,10 +6,9 @@ import glob
 from dotenv import load_dotenv
 
 load_dotenv()
-
-TOKEN = os.getenv("TOKEN")
 api_key = os.getenv("API_KEY")
 openai.api_key = api_key
+
 base_txt = "2024-10-02_13_11_31.txt" # タグ分けのベースになるtxtファイル
 
 with open(base_txt, encoding="utf-8") as f:
@@ -50,7 +49,7 @@ def add_tag_all():
     tag_instr = f"これは「phase_tags.txt」です。記載されているタグのみを使い、タグ付けしてください。ここに記載されているタグは遵守し、追記・削除は絶対に行わないでください:\n{tag_list_str}"
 
     # --- base_txtの区間数を取得 ---
-    base_blocks_path = f"phase_blocks_{base_txt}.json"
+    base_blocks_path = f"phase_blocks_{os.path.splitext(base_txt)[0]}.json"
     with open(base_blocks_path, encoding="utf-8") as f:
         base_blocks = json.load(f)
     base_block_count = len(base_blocks)
@@ -147,7 +146,7 @@ while True:
     yn = input("このタグ分けで問題ないですか？ [Y/N]: ").strip().lower()
     if yn == "y":
         # jsonに保存
-        outname = f"phase_blocks_{base_txt}.json"
+        outname = f"phase_blocks_{os.path.splitext(base_txt)[0]}.json"
         with open(outname, "w", encoding="utf-8") as f:
             json.dump(blocks, f, ensure_ascii=False, indent=2)
         # .txtに保存（出現順に書かれるよう処理）

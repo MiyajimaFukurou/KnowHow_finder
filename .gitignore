@@ -1,4 +1,5 @@
 .env
 *.txt
 *.json
+*.csv
 venv/
